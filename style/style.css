@@ -1,21 +1,53 @@
 @import "normalize.css";
 
-body {
-  display: flex;
-  height: 100vh;
+*{
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.header {
-  background-color: red;
+
+.header__menu {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  
+  background-color: rgb(179, 167, 167);
+}
+
+.header__menu-item-position1 {
+  flex: 1;
   
 }
+
+.header__menu-item-position2 {
+  flex: 1;
+  
+}
+
+.header__menu-item-position3 {
+ flex: 1;
+}
+/* почему при установке элементам header__menu-item-position 1/2/3  flex-grow: 1; вместо flex: 1;  этот элемент получается шире?.header__menu-item-position3' */
+
+
+
+
+
+.line{
+  width: 1500px;
+  margin: auto;
+  border: 2px solid black;
+  transform: translateY(-4px);
+}
+
+
 
 .main {
   background-color: green;
   
 }
 
-.foooter {
-  background-color: violet;
+.footer {
+  background-color: rgb(195, 21, 195);
  
 }
