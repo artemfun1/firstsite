@@ -1,0 +1,21 @@
+@import "normalize.css";
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.header {
+  background-color: red;
+  
+}
+
+.main {
+  background-color: green;
+  
+}
+
+.foooter {
+  background-color: violet;
+ 
+}
