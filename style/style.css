@@ -1,53 +1,133 @@
-@import "normalize.css";
+@import 'normalize.css';
 
-*{
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/Helvetica/helvetica_cyr_boldoblique.ttf") format("ttf"),
+  url("fonts/Helvetica/helvetica_cyr_oblique.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+
+* {
   margin: 0;
   box-sizing: border-box;
 }
 
-
 .header__menu {
   height: 82px;
   display: flex;
+  justify-content: center;
+  
+}
+
+.header__menu-group1 {
+  background-color: #F1F1F1;
+width: 11%;
+}
+
+.header__menu-group2 {
+  width: 78%;
+  height: 82px;
+  display: flex;
   align-items: center;
+  background-color: #F1F1F1;
+  border-bottom: 2px solid black;
+}
+
+.header__menu-group3 {
+  background-color: #F1F1F1;
+  width: 11%;
+}
+
+.header__menu-group2-item {
+  display: flex;
+  width: 33.33%;
+}
+
+.header__menu-group2-item_position1 {
+  justify-content: start;
+}
+
+.header__menu-group2-item_position2 {
   
-  background-color: rgb(179, 167, 167);
 }
 
-.header__menu-item-position1 {
-  flex: 1;
-  
+.header__menu-group2-item_position3 {
+
 }
 
-.header__menu-item-position2 {
-  flex: 1;
-  
+.header__menu-group2-item-grouplink1 {
+
 }
 
-.header__menu-item-position3 {
- flex: 1;
+.header__menu-group2-item-grouplink2 {
+
 }
-/* почему при установке элементам header__menu-item-position 1/2/3  flex-grow: 1; вместо flex: 1;  этот элемент получается шире?.header__menu-item-position3' */
 
+.header__menu-group2-item-grouplink3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 
+}
 
+.header__menu-group2-item-link {
+text-decoration: none;
+color: #000;
+font-family: IBM Plex Mono;
+font-weight: 400;
 
+}
+/* 
+a:link{
+  color: aqua;
+} */
+/* 
+.header__menu-group2-item-link_anotherstyle1:visited{
+  color: yellowgreen; 
+ } */
+/* a:visited {
+  color: aquamarine;
+}  почему не работает с изменением цвета и почему не работают ссылки нормально*/
+ /* .header__menu-group2-item-link_anotherstyle2:focus {
+ } */
 
-.line{
+.header__menu-group2-item-link_anotherstyle1 {
+  padding-right: 5px;
+}
+
+.header__menu-group2-item-link_anotherstyle2 {
+  padding-left: 5px;
+}
+
+.header__menu-group2-item-link_anotherstyle3 {
+  font-family: Helvetica, Arial, sans-serif;
+font-size: 24px;
+font-weight: 700;
+
+}
+
+.header__menu-group2-item-link-dot{
+  display: inline;
+}
+
+.header__menu-group2-item-link-dot-svg {
+  transform: translateY(2px);
+}
+
+/* .line {
   width: 1500px;
   margin: auto;
   border: 2px solid black;
   transform: translateY(-4px);
-}
-
-
+} */
 
 .main {
   background-color: green;
-  
 }
 
 .footer {
-  background-color: rgb(195, 21, 195);
- 
+  background-color: rgb(154, 154, 154);
 }
+
