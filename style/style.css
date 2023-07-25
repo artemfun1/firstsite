@@ -1,13 +1,14 @@
-@import 'normalize.css';
+@import './components/normalize.css';
+@import '../fonts/goshasans/fontgoshasans.css';
 
-@font-face {
-  font-family: "Helvetica";
-  src: url("fonts/Helvetica/helvetica_cyr_boldoblique.ttf") format("ttf"),
-  url("fonts/Helvetica/helvetica_cyr_oblique.ttf") format("ttf");
+/* @font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica/helvetica_cyr_boldoblique.ttf') format('ttf'),
+    url('../fonts/helvetica/helvetica_cyr_oblique.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  }
+} */
 
 * {
   margin: 0;
@@ -18,12 +19,12 @@
   height: 82px;
   display: flex;
   justify-content: center;
-  
+  margin-bottom: 230px;
 }
 
 .header__menu-group1 {
-  background-color: #F1F1F1;
-width: 11%;
+  background-color: #f1f1f1;
+  width: 11%;
 }
 
 .header__menu-group2 {
@@ -31,53 +32,36 @@ width: 11%;
   height: 82px;
   display: flex;
   align-items: center;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   border-bottom: 2px solid black;
+  
 }
 
 .header__menu-group3 {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   width: 11%;
 }
 
 .header__menu-group2-item {
   display: flex;
-  width: 33.33%;
+  flex: 1;
 }
 
 .header__menu-group2-item_position1 {
   justify-content: start;
 }
 
-.header__menu-group2-item_position2 {
-  
-}
-
-.header__menu-group2-item_position3 {
-
-}
-
-.header__menu-group2-item-grouplink1 {
-
-}
-
-.header__menu-group2-item-grouplink2 {
-
-}
-
 .header__menu-group2-item-grouplink3 {
   display: flex;
   width: 100%;
   justify-content: space-between;
-
 }
 
 .header__menu-group2-item-link {
-text-decoration: none;
-color: #000;
-font-family: IBM Plex Mono;
-font-weight: 400;
-
+  text-decoration: none;
+  color: #000;
+  font-family: IBM Plex Mono, sans-serif;
+  font-weight: 400;
 }
 /* 
 a:link{
@@ -90,7 +74,7 @@ a:link{
 /* a:visited {
   color: aquamarine;
 }  почему не работает с изменением цвета и почему не работают ссылки нормально*/
- /* .header__menu-group2-item-link_anotherstyle2:focus {
+/* .header__menu-group2-item-link_anotherstyle2:focus {
  } */
 
 .header__menu-group2-item-link_anotherstyle1 {
@@ -101,33 +85,161 @@ a:link{
   padding-left: 5px;
 }
 
-.header__menu-group2-item-link_anotherstyle3 {
-  font-family: Helvetica, Arial, sans-serif;
-font-size: 24px;
-font-weight: 700;
-
+.header__menu-group2-item-link_anotherstyle3{
+z-index: 1;
 }
 
-.header__menu-group2-item-link-dot{
+.flesh{
+  position: absolute;
+  top: -31px;
+  width: 100%;
+  height: 100%;
+}
+.flesh__item2 {
+  position: relative;
+  right: 120px;
+  max-width: 681px;
+  height:996.087px ;
+} 
+
+
+
+
+.flesh__item3 {
+  flex: 1 2;
+}  
+
+.header__menu-group2-item-link_anotherstyle3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+.header__menu-group2-item-link-dot {
   display: inline;
 }
 
 .header__menu-group2-item-link-dot-svg {
   transform: translateY(2px);
+  
 }
 
-/* .line {
-  width: 1500px;
-  margin: auto;
-  border: 2px solid black;
-  transform: translateY(-4px);
-} */
 
-.main {
-  background-color: green;
+@media (max-width: 1150px) {
+  .header__menu-group2-item-grouplink3>a{
+  white-space: nowrap;
+  margin-left: 15px;
+ } 
 }
 
-.footer {
-  background-color: rgb(154, 154, 154);
+.main__content-part1 {
+background-color: #a7a8a8;
+min-height: 100px;
+margin-bottom: 30px;
 }
 
+.main__content-part1-container1 {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-evenly;
+  margin-bottom: 300px;
+}
+
+
+
+.main__content-part1-container1-blockitem{
+  position: relative;
+  
+  /* top: 300px; */
+font-family: Gosha Sans, sans-serif ;
+font-size: 96px;
+font-weight: normal;
+
+}
+
+.main__content-part1-container1-title {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main__content-part1-container1-title-item1{
+  font-family: IBM Plex Mono;
+  font-size: 64px;
+  font-weight: 400;
+  text-shadow: 
+  0px 4px 4px rgba(0, 0, 0, 0.25), 
+  0px 4px 4px  rgba(0, 0, 0, 0.25), 
+  0px 4px 4px  rgba(0, 0, 0, 0.25), 
+  0px 4px 4px  rgba(0, 0, 0, 0.25), 
+  0px 4px 4px  rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+
+.main__content-part1-container1-title-item2{
+  align-self: flex-start;
+  padding-bottom: 35px;
+  font-family: IBM Plex Mono;
+  font-size: 64px;
+  font-weight: 400;
+  background-color: #FF1A1A;
+}
+
+.main__content-part1-container1-title-item3{
+  
+  font-family: IBM Plex Mono;
+  align-self: flex-end;
+  font-size: 64px;
+  
+  box-sizing: content-box;
+  
+  padding-bottom: 49px;
+  font-weight: 400;
+  background-color: #FF1A1A;
+  position: relative;
+  top: -60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main__content-part2 {
+  background-color: #469559;
+  min-height: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer__content {
+  background-color: rgb(53, 90, 159);
+}
