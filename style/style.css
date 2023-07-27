@@ -8,6 +8,8 @@
 
 body {
   background-color: #f1f1f1;
+
+  /* overflow-x: hidden; */
 }
 
 .header__menu {
@@ -64,19 +66,13 @@ body {
   font-family: IBM Plex Mono, sans-serif;
   font-weight: 400;
 }
-/* 
-a:link{
+
+/* a:link{
   color: aqua;
-} */
-/* 
-.header__menu-group2-item-link_anotherstyle1:visited{
-  color: yellowgreen; 
- } */
+}  */
 /* a:visited {
   color: aquamarine;
-}  почему не работает с изменением цвета и почему не работают ссылки нормально*/
-/* .header__menu-group2-item-link_anotherstyle2:focus {
- } */
+}  почему не работает с изменением цвета и почему не работают ссылки нормально */
 
 .header__menu-group2-item-link_anotherstyle1 {
   padding-right: 5px;
@@ -93,13 +89,14 @@ a:link{
 .flesh {
   position: absolute;
   top: -31px;
-  width: 100%;
+  width: 10px;
   height: 100%;
   z-index: -2;
 }
+
 .flesh__item2 {
-  position: relative;
-  right: 120px;
+  position: absolute;
+  left: -200px;
   max-width: 681px;
   height: 996.087px;
   z-index: -2;
@@ -169,25 +166,9 @@ a:link{
   margin-bottom: 200px;
 }
 
-@media (max-width:1497px) {
+@media (max-width: 1497px) {
   .main__content-part1 {
     margin-bottom: 23.44px;
-  }
-  
-}
-
-@media (max-width:994px) {
-  .main__content-part1-container3 {
-    /* justify-content: center !important; */
-  }
-  .main__content-part1-container3-item1{
-    width: 474px!important;
-    margin-left: 30px;
-    /* почему без импотент не работает о_О 
-    а марджин работает */
-  }
-   .divcostil {
-    display: none;
   }
 }
 
@@ -252,13 +233,6 @@ a:link{
   margin-bottom: 130px;
 }
 
-.main__content-part1-container2-item1 {
-  font-family: Gosha Sans, sans-serif;
-  font-size: 96px;
-  font-weight: normal;
-  line-height: 0.4;
-}
-
 .main__content-part1-container2-forflex {
   display: flex;
   justify-content: flex-end;
@@ -271,11 +245,28 @@ a:link{
   z-index: 2;
   position: relative;
   left: -15px;
+  font-family: Gosha Sans, sans-serif;
+  font-size: 96px;
+  font-weight: normal;
+  line-height: 0.4;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1690px) {
   .coloro {
     color: #f1f1f1;
+  }
+}
+@media (max-width: 1500px) {
+  .coloro {
+    color: black;
+  }
+  .coloro2 {
+    color: #f1f1f1;
+  }
+}
+@media (max-width: 1200px) {
+  .coloro2 {
+    color: black;
   }
 }
 
@@ -336,6 +327,16 @@ a:link{
 .main__content-part1-container3-item1 {
   width: 490px;
   padding-top: 49px;
+}
+
+@media (max-width: 994px) {
+  .main__content-part1-container3-item1 {
+    width: 474px;
+    margin-left: 30px;
+  }
+  .divcostil {
+    display: none;
+  }
 }
 
 .main__content-part1-container3-item2 {
@@ -452,6 +453,7 @@ a:link{
   text-decoration: none;
   border-bottom: 2px solid black;
   padding-bottom: 24px;
+  word-break: break-all;
 }
 
 .main__content {
@@ -459,18 +461,14 @@ a:link{
 }
 
 .footer {
- margin-bottom: 150px;
+  margin-bottom: 150px;
   display: flex;
   justify-content: space-evenly;
 }
 
-
-
 .footet__div4 {
   display: flex;
-  flex-direction: column
-  
-  
+  flex-direction: column;
 }
 
 .footer__div2-contact {
@@ -484,11 +482,530 @@ a:link{
   font-family: Rubik;
   font-size: 48px;
   font-weight: 400;
-  line-height:  66.55px ;
+  line-height: 66.55px;
   position: relative;
   top: 35px;
+  text-decoration: none;
 }
 
+@media (max-width: 1200px) {
+  .main__content-part1-container2-item1 {
+    left: 450px;
+    bottom: 95px;
+    white-space: nowrap;
+  }
+  .coloro {
+    color: black;
+  }
+}
 
+@media (max-width: 870px) {
+  .flesh__item2 {
+    max-width: 600px;
+    top:  -8px;
 
+    height: 900px;
+  }
+  .footer__div2-contact {
+    font-family: Gosha Sans;
+    font-size: 48px;
 
+    font-weight: 400;
+  }
+  .footet__div3-link {
+    font-family: Rubik;
+    font-size: 36px;
+
+    font-weight: 400;
+    line-height: 49.912px;
+  }
+
+  .footet__div4 {
+    position: relative;
+    top: 40px;
+    right: 200px;
+  }
+  .footer {
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .flesh__item2 {
+    width: 400px;
+    height: 585px;
+    visibility: visible;
+  }
+  .header__menu-group3,
+  .header__menu-group2,
+  .header__menu-group1,
+  .costil {
+    visibility: hidden;
+  }
+  .main__content-part1-container1-title-item1 {
+    background-color: #f1f1f1;
+    text-shadow: 0px 0px 0px;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .main__content-part1-container1-title-item2 {
+    font-size: 28px;
+    font-style: normal;
+    padding: 05px;
+    font-weight: 400;
+    position: relative;
+    bottom: 50px;
+    left: -10px;
+  }
+  .main__content-part1-container1-title-item3 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 05px;
+    position: relative;
+    top: -50px;
+    left: -90px;
+    width: 300px;
+  }
+  .main__content-part1-container1 {
+    margin-bottom: 230px;
+  }
+  .main__content-part1-container2-item1 {
+    color: #000;
+    font-family: Gosha Sans;
+    font-size: 48px;
+    font-weight: 400;
+    width: 40%;
+    position: absolute;
+    left: -60px;
+    top: 600px;
+  }
+
+  .main__content-part1-container2-forflex {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .main__content-part1-container2-item2 {
+    font-family: Rubik;
+    font-size: 14px;
+    width: 334px;
+    font-weight: 400;
+    line-height: 23.558px;
+    margin-left: 40px;
+  }
+  .main__content-part1-container2-item3 {
+    font-family: Rubik;
+    font-size: 14px;
+    width: 334px;
+    font-weight: 400;
+    line-height: 23.558px;
+  }
+  .main__content-part1-background {
+    font-family: IBM Plex Mono;
+    font-size: 200px;
+    text-indent: -65px;
+
+    font-weight: 700;
+    line-height: 304.2px;
+    top: 655px;
+  }
+  .main__content-part1-container2 {
+    margin-bottom: 20px;
+  }
+
+  .main__content-part1-container3 {
+    flex-direction: row;
+  }
+  .main__content-part1-container3-item1,
+  .main__content-part1-container3-item2,
+  .main__content-part1-container3-item3 {
+    width: 334px;
+  }
+
+  .main__content-part1-container3-item1-title,
+  .main__content-part1-container3-item2-title,
+  .main__content-part1-container3-item3-title {
+    font-family: Gosha Sans;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .main__content-part1-container3-item1-content,
+  .main__content-part1-container3-item2-content,
+  .main__content-part1-container3-item3-content {
+    font-family: Rubik;
+    font-size: 12px;
+
+    font-weight: 400;
+    line-height: 20.192px;
+  }
+
+  .main__content-part1 {
+    margin-bottom: 100px;
+  }
+
+  .main__content-part2-container1 {
+    font-family: Gosha Sans;
+    font-size: 48px;
+    font-weight: 400;
+    margin-left: 26px;
+    margin-bottom: 0px;
+  }
+
+  .divright {
+    width: 0%;
+    flex-shrink: 3;
+  }
+  .divleft {
+    width: 12%;
+    flex-shrink: 3;
+  }
+}
+
+@media (max-width: 620px) {
+  .main__content-part1-container2-item1 {
+    left: 60px;
+  }
+}
+
+@media (max-width: 470px) {
+  .flesh__item2 {
+    width: 272.214px;
+    height: 398.112px;
+    left: -145px;
+  }
+
+  .flesh__item2 {
+    visibility: visible;
+  }
+
+  .header__menu-group3,
+  .header__menu-group2,
+  .header__menu-group1 {
+    visibility: visible;
+  }
+
+  .header__menu {
+    visibility: visible;
+    border-bottom: 2px solid black;
+    max-height: 56px;
+    margin-bottom: 130px;
+  }
+
+  .header__menu-group2-item-grouplink1 {
+    visibility: hidden;
+  }
+
+  .header__menu-group1 {
+    display: none;
+  }
+
+  .header__menu-group3 {
+    display: none;
+  }
+
+  .header__menu-group2 {
+    border-bottom: none;
+    width: 78%;
+  }
+
+  .header__menu-group2-item_position2 {
+    justify-content: center;
+  }
+
+  .header__menu-group2-item_position3 {
+    display: none;
+  }
+
+  .costil {
+    display: none;
+  }
+
+  .header__menu-group2-item-link_anotherstyle3 {
+    background-color: none;
+    position: relative;
+    bottom: 12px;
+    right: px;
+  }
+  .flesh__item2 {
+    position: relative;
+    /* right: 152px; */
+  }
+  
+
+  /* кончился хедер */
+
+  .main__content-part1-container1 {
+    margin-bottom: 0px;
+  }
+  .main__content-part1-container1-blockitem {
+    margin-bottom: -50px;
+  }
+
+  .main__content-part1-container1-title-item1 {
+    font-size: 18px;
+    position: relative;
+    width: 226px;
+    white-space: nowrap;
+    left: -23px;
+    background-color: rgba(117, 190, 218, 0);
+  }
+
+  .main__content-part1-container1-title-item2 {
+    font-size: 18px;
+
+    padding: 05px;
+    font-weight: 400;
+    position: relative;
+    bottom: 50px;
+    left: -23px;
+  }
+
+  .main__content-part1-container1-title-item3 {
+    font-size: 18px;
+
+    position: relative;
+    top: -50px;
+    left: -25px;
+    width: 190px;
+    white-space: nowrap;
+  }
+
+  .main__content-part1-container2-item1 {
+    font-size: 35.833px;
+    left: 0px;
+    top: 320px;
+  }
+  .main__content-part1-container2-item2,
+  .main__content-part1-container2-item3 {
+    font-size: 13.935px;
+    width: 342.4px;
+    margin-left: 30px;
+    margin-right: 5px;
+  }
+  .main__content-part1-container2-item2 {
+    height: 164.233px;
+    margin-bottom: 15px;
+  }
+  .main__content-part1-container2-item3 {
+    margin-bottom: 25px;
+  }
+
+  .main__content-part1-container2-forflex {
+    flex-direction: column;
+  }
+
+  .main__content-part1-container3 {
+    border-top: none;
+  }
+
+  .main__content-part1-container3-item1 {
+    border-top: 2px solid black;
+    padding-top: 25px;
+  }
+  .main__content-part1-container3-item2 {
+    padding-top: 25px;
+  }
+  .main__content-part1-container3-item3 {
+    padding-top: 25px;
+  }
+
+  .main__content-part1-background {
+    font-family: IBM Plex Mono;
+    font-size: 119.442px;
+    text-indent: -30px;
+
+    line-height: 181.671px;
+    top: 505px;
+  }
+
+  .main__content-part2-container1 {
+    font-size: 36px;
+  }
+
+  .main__content-part2-container2-item {
+    margin-left: 16px;
+  }
+
+  .main__content-part2-container2-item-number {
+    font-size: 72px;
+
+    position: absolute;
+    left: 61px;
+    bottom: 2px;
+    right: 14px;
+    z-index: 2;
+  }
+
+  .number1 {
+    left: 274px;
+    bottom: -345px;
+  }
+
+  .number2 {
+    left: 274px;
+    bottom: -441px;
+  }
+
+  .number3 {
+    left: 274px;
+    bottom: -537px;
+  }
+
+  .number4 {
+    left: 274px;
+    bottom: -632px;
+  }
+
+  .number5 {
+    left: 274px;
+    bottom: -728px;
+  }
+
+  .main__content-part2-container2-item-title1 {
+    font-size: 14px;
+
+    line-height: 19.41px;
+  }
+
+  .main__content-part2-container2-item-title1 {
+    font-size: 14px;
+
+    line-height: 19.41px;
+  }
+
+  .main__content-part2-container2-item-link {
+    font-size: 24px;
+
+    line-height: 36.504px;
+
+    padding-bottom: 15px;
+  }
+
+  .divleft {
+    display: none;
+  }
+  .divright {
+    display: none;
+  }
+
+  .main__content {
+    margin-bottom: 88px;
+  }
+
+  .main__content-part2 {
+    min-height: 300px;
+  }
+
+  /* кончился мейн */
+
+  .footer__div2-contact {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .footet__div3-link {
+    font-size: 24px;
+
+    line-height: 33.275px;
+    position: relative;
+    top: 0px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-bottom: 150px;
+  }
+
+  .footet__div1 {
+    display: none;
+  }
+
+  .footet__div3 {
+    display: none;
+  }
+
+  .footet__div4 {
+    position: relative;
+    top: 0px;
+    right: 0px;
+  }
+
+  .footet__div5 {
+    display: none;
+  }
+}
+
+/* бургер меню */
+
+.header__menu-burger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  z-index: 11;
+}
+
+.header__menu-burger-button-line {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 4px 4px #000;
+}
+
+.nav {
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgb(69, 69, 69);
+  gap: 70px;
+  z-index: 10;
+  display: none;
+}
+
+#burger {
+  visibility: hidden;
+}
+
+#burger:checked + label + .nav {
+  display: flex;
+}
+
+.navitem {
+  font-family: IBM Plex Mono;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  color: #d6d6d6;
+}
+
+.nav-item1 {
+  margin-top: 150px;
+}
+
+@media (min-width: 800px) {
+  .header__menu-burger {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  html, body {
+    max-width: 370px;
+  
+    overflow-x: hidden;
+  }
+}
