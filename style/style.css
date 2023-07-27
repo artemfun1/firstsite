@@ -1,6 +1,13 @@
 @import './components/normalize.css';
 @import '../fonts/goshasans/fontgoshasans.css';
 
+/* https://www.figma.com/file/oeNRE21NZm8KE7F7Vuxim4/Studio-site-%2B?node-id=198%3A6&mode=dev 
+
+тут дизайн
+
+*/
+
+
 * {
   margin: 0;
   box-sizing: border-box;
